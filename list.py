@@ -102,3 +102,32 @@ numbers = [x for x in range(1,7)]
 print(numbers)
 squares = [x**2 for x in range(1,7)]
 print(squares)
+
+
+import copy
+
+copy_of_squares = copy.deepcopy(squares)
+print(copy_of_squares)
+
+
+
+
+
+## difference bw shallow and deep copy and understanding mutable and immuatble objects
+matrix = [[1,2],[3,4]]
+shallow_mat= matrix.copy()
+deep_mat = copy.deepcopy(matrix)
+
+print(f"matrix : {matrix}")
+print(f"shallow_mat : {shallow_mat}")
+print(f"deep_mat : {deep_mat}")
+
+matrix[0][0]=100        # changing 1st element of 1st row to 100
+
+print(f"matrix : {matrix}")
+print(f"shallow_mat : {shallow_mat}")
+print(f"deep_mat : {deep_mat}")
+
+
+
+
