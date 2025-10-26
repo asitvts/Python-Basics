@@ -81,3 +81,24 @@ print(f"ref count of [3,4] after deletion from list_of_list:{ref_count-2}" )
 my_list[0]=22
 print(f"new_list:{new_list}")
 print(f"my_list:{my_list}")
+
+
+print("")
+print(f"my list {my_list}")
+
+print(len(my_list))      # number of elements
+print(sum(my_list))      # sum of elements
+print(max(my_list))      # largest element
+print(min(my_list))      # smallest element
+
+# list slicing
+print("")
+print(f"my list {my_list}")
+print(my_list[1:4])
+print(my_list[::-1])
+
+
+numbers = [x for x in range(1,7)]
+print(numbers)
+squares = [x**2 for x in range(1,7)]
+print(squares)
