@@ -114,6 +114,7 @@ print(copy_of_squares)
 
 
 ## difference bw shallow and deep copy and understanding mutable and immuatble objects
+print("difference bw shallow and deep copy and understanding mutable and immuatble objects")
 matrix = [[1,2],[3,4]]
 shallow_mat= matrix.copy()
 deep_mat = copy.deepcopy(matrix)
@@ -130,4 +131,13 @@ print(f"deep_mat : {deep_mat}")
 
 
 
-
+# ways to create shallow copy
+print("ways to create shallow copy")
+list1 = ["asit"]
+print(list1)
+list2 = copy.copy(list1)
+print(list2)
+list3 = list1.copy()
+print(list3)
+list4 = list1[:]
+print(list4)
